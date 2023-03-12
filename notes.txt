@@ -1,0 +1,800 @@
+SDLC
+    Software Development Life Cycle
+        - Analysis                  = 30%   20%  20%   25%  25%  35%   15%  10%  30
+        - Design                    = 10%   20%  15%   25%  15%  15%   15%  10%  30
+        - Implementation            = 30%   30%  40%   25%  15%  20%   50%  40%  20-30
+        - Testing                   = 15%   15%  10%   15%  40%  15%   10%  30%  5-10
+        - Deployment                = 15%   15%  15%   10%  5%   15%   10%  10%  5-10
+
+                                    = 100%
+        - Maintenance
+
+        Steps:
+            Costing
+            Man power
+            Architect
+            Design (Interior / Exterior)
+            Raw Materials
+            Approvals
+
+Developer - Analysing the Requirements
+Programmer - Sequencing the steps
+Coder - Implement
+
+Project
+    - Construction of a Building/Classroom
+
+    - Step 1: 10:20 (15mins)
+        Costing (raw materials, wages, hiring/rentals, acquiring)
+        Man power (labourers, supervisors, security)
+        Architect (engg)
+        Design (Interior / Exterior)
+        Raw Materials
+            (steels, iron, bricks, cement, sand, aggregates, water, chemicals, paint, electricals, plumbing, wood, tables, chairs, a/c, sanitory, decorations)
+        Approvals
+        Location
+
+    - Step 2 (sequencing): 10:42 ( Pseudo Code - Human Understandable Language )
+        Location
+        Project Plan
+        Costing
+        Approvals
+        Man Power
+        Raw Materials
+        Build
+        QA
+        Delivery / Handover
+
+
+Template Conversion into Web Page
+    - Step 1
+        - layout
+        - content
+        - assets
+        - platform
+        - colors
+        - background color
+        - text / size / style
+        - pictures
+    
+    - Step 2 ( Pseudo Code )
+        - Layout
+            - 8 Rows
+                - 1 row - 2 cols
+                - 2 row - 3 cols
+                - 3 row - 1 col
+                - 4 row - 3 cols
+                - 5 row - 3 cols
+                - 6 row - 1 col
+                - 7 row - 2 cols
+                - 8 row - 1 col
+
+Process:
+
+- WhatsApp
+- Assignments / Projects
+    Frontend
+        - 4-5 templates (HTML + CSS with/without Bootstrap)
+        - 4-5 templates (React)
+
+    FullStack
+        - Frontend
+        +
+        - at least 1 Full Project
+            React + Express + Node + MongoDb
+
+- Classes
+    - Sat, Sun - 10-1pm
+
+- Curriculum
+    - HTML
+    - CSS
+    - Bootstrap
+    - JavaScript
+    - jQuery (intro)
+    - ReactJs
+    - GitHub
+    +
+    - ExpressJs
+    - NodeJs
+    - MongoDB
+    - Git (Desktop / CLI)
+    +
+    Hosting
+        GitHub
+        Heroku
+        MongoDb Cloud
+        AWS
+
+
+
+NOTES: 30-10-2022
+
+Language
+    - Programming
+        - PHP
+        - Java
+        - .Net
+    - Scripting
+        - JavaScript
+            client
+        - TypeScript
+            client
+        - VBScript
+            server
+        - ASP
+            server
+        - JSP
+            server
+    - Markup
+        - Placeholder
+            - HTML
+    
+    
+    - Machine
+        - High / Low
+    - 
+
+
+NOTES: 05-11-2022
+
+HTML
+    - TAGS (aka Elements aka Containers)
+        Paired
+            <...> = opening tag
+                .... content or data or something...
+            </...> = closing tag
+        Unpaired (aka self closing tag)
+            <...>
+
+        Block Level
+            - which occupies the entire row of the parent container
+            - every block container will start in a new line
+        Inline
+            - whatever the size of the content, will be the size of the container
+            - 2 inline containers, can be shown in the same row (next to each other)
+
+Code Editors
+    - Editor
+    - IDE
+        Integrated Development Environment
+
+    DPI
+        Dots Per Inch
+
+Basic Coding Standards
+    - Meaningful names
+        file name
+        folder / project name
+        variable
+            - How to name?
+                cases
+                    - lower camel case
+                        first.html
+                        firstPage.html
+                        firstPageNextPage.html
+                    - upper camel case
+                        First.html
+                        FirstPage.html
+                        FirstPageNextPage.html
+                    - uppercase
+                        FIRSTPAGE.html
+                    - lowercase
+                        firstpage.html
+                    - dash case
+                        first.html
+                        first-page.html
+                    - snake case
+                        first.html
+                        first_page.html
+            - How not to name?
+                DONT USE SPACES
+                    first page.html
+    - Code Indent
+        Spaces
+            2 or 4 or 8
+
+ASCII
+    American Standard for Code Information and Interchange
+
+HTML Steps
+    - Open Visual Studio Code
+        - Create New Text File
+            - Save the file as <filename>.html
+    - Opening the file in the browser
+        - Open File Explorer
+            - Navigate to the folder where the .html file was saved
+            - Double Click on the file or Click once on the file and click on ENTER key
+        - Open File Explorer
+            - Navigate to the folder where the .html file was saved
+            - Click once on the file and RIGHT CLICK -> Open With -> <select your appropriate choice of browser>
+        - Open the Browser
+            - Click CTRL + O
+            - Navigate to the folder where the .html file was saved
+            - Double Click on the file or Click once on the file and click on Open button
+    - Open an existing file
+
+W3C
+    - World Wide Web Consortium
+
+Deprecated
+
+
+NOTES: 06-11-2022
+
+HTML Attributes
+    - Name/Value pairs
+
+    - Paired
+        name="<value>"
+    - Unpaired (self closing)
+        name
+
+    - Categories
+        - Core
+            Id
+            Class
+            Style
+            Title
+        - Generic
+            align
+        - Custom
+            data-<name>
+
+Website vs Webpage
+    - webpage is single document
+        www.dinesh.com/home.html
+    - website is collection of webpages
+        Home
+        About
+        Contact
+        Blog
+        Portfolio
+
+    URL
+        - uniform resource locator
+            www.domain.com/.in/.co.in
+                IP
+
+File Path
+    Relative Path
+    Absolute Path / Full Path 
+
+CORS
+    Cross Origing Resource Sharing
+
+HTML Measurements
+    px
+    %
+
+Table
+Tabular Column
+
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+NOTES: 19-11-2022
+
+Web Development
+    - CRIME in web development?
+        - Horizontal Scrollbar
+
+Responsive vs Compatible ?
+
+
+WYSIWYG Editor
+
+Spacing
+    2 types
+        - margin (cellspacing)
+        - padding (cellpadding)
+
+Sizing
+    2 types
+        - width
+        - height
+
+Protocols
+    http
+    https
+    smtp
+    ftp
+    pop3
+    imap
+    mailto
+    tel
+
+Sharing your assignments or project
+    2 links
+        - Output link
+            https://srinanoo.github.io/october-offline-batch-2022/first-page.html
+        - Code Link
+            https://github.com/srinanoo/october-offline-batch-2022.git
+
+
+NOTES: 20-11-2022
+
+Assignment #2
+    - Named Anchor
+        1st Half
+        - Pick any concept
+            - Title/Name at the top
+            - Content/Section at the bottom
+            - From top when clicked go to corresponding section
+            - From bottom when clicked go to the top title/name
+
+        2nd Half
+        - Pick any concept
+            - Create 2 HTML files
+                1st HTML file
+                    - You will only have the Title/Names
+                        eg:
+                            <a href="2ndpage.html#sec1">Title 1</a>
+                2nd HTML file
+                    - You will all the content/sections
+                        eg:
+                            <a href="1stpage.html">Go Back</a>
+
+HTML FORMS
+    - 2 Methods
+        - HTTP GET
+            - is the default method of passing data from frontend
+            - ?txtUsername=kugkugujg
+                ?
+                keyname = keyvalue
+            - when a question mark is there in URL
+                - querystring
+        - HTTP POST
+    
+    - How many different forms we have?
+        Contact
+        Login / Sign in
+        Feedback
+        Registration / Sign up
+        Enquiry
+        Email
+        Forgot Password
+        Payment
+        Complaint
+        Railway Reservation / Cancellation
+        Bank Deposit / Withdrawal / Debit/Credit Card Application
+        Insurance Application / Form / Renewal / Claim
+        Booking Resturant / Travel / Movie
+        Admission College / School
+        Job Application / Posting / Resignation / Appraisal / Advertisement
+        Govt Birth / Death / EB / Aadhaar / Pan / Passport / License / Smart Card
+        IT Tax Filing
+        Leave Application
+        OD Form
+            - 40 Forms
+
+Assignment #3
+    - 40 Forms
+        - create forms and form controls for each form. 
+
+    
+
+Website Optimization
+    - TTFB
+        Time Taken for First Byte
+            - Problems
+                - because of the server (capacity)
+                - file size or code leaks/injections
+
+Encoding
+Decoding
+
+Encrpyting
+Decrpyting
+
+
+NOTES: 17-12-2022
+
+Website:
+    Home (home.html)
+    About (about.html)
+    Contact (contact.html)
+    Services (services.html)
+    Blog (blog.html)
+
+    styles.css
+
+
+NOTES: 24-12-2022
+
+CSS Selectors:
+    universal
+    type
+    class
+    id
+    attribute
+    descendant
+    child
+
+    type:
+        type + class
+            div.pink
+        type + id
+            div#head
+        type + attribute
+            input[type]
+        type + attribute + value
+            input[type="text"]
+        type + descendant (type)
+            div p
+        type + descendant (class)
+            div .pink
+        type + descendant (id)
+            div #head
+        type + descendant + attribute
+            div [type]
+        type + descendant + attribute + value
+            div [type="text"]
+        type + descendant + type + attribute + value
+            div input[type="text"]
+
+
+NOTES: 07-01-2023
+
+CSS Basics
+    - Colors
+        - Basic Colors?
+            Black and White
+
+        - Named Colors
+            - 16 Named
+
+        - RGB
+            - RED + GREEN + BLUE
+                - % (0 - 100)
+                    rgb(%, %, %)
+                - value (0 - 255)
+                    rgb(0-255, 0-255, 0-255)
+            
+        - RGBA
+            - RED + GREEN + BLUE + ALPHA (opacity or Transparency)
+                - rgba(%, %, %, %)
+                - rgba(0-255, 0-255, 0-255, 0-1)
+
+        - HEX
+            - 6 digits
+                - 0-9, A-F
+                    - #000000
+                    - #ffffff
+                    - #111111
+                    - #aaaaaa
+                    - #a1b2c2
+            - 3 digits
+                #000
+                #fff
+                #111
+
+        - HSL
+            - Hue + Saturation + Lightness
+                hsl(deg, %, %)
+
+        - HSLA
+            - Hue + Saturation + Lightness + Alpha
+                hsla(deg, %, %, %)
+
+    - Measurements
+        %
+        px
+        pt
+        em
+        rem
+
+        mm
+        cm
+        in
+        pc
+
+        vh - viewport height
+        vw - viewport width
+
+Dimension vs Resolution (DPI)
+    Width & Height
+
+
+NOTES: 14-01-2023
+
+Font Files/Types
+    - ttf
+        true type font
+    - otf
+        open type font
+    - woff
+        web open file format
+    - eot
+        embedded font
+    - svg
+        scalar vector graphic
+
+CDN
+    - Content Delivery Network
+
+
+NOTES: 22-01-2023
+
+CSS
+    - before
+    - after
+
+    <TAG>
+        ::before => prepend (method) in JS
+        Content / Child Container
+        ::after => append (method) in JS
+    </TAG>
+
+This week's template to convert:
+https://srinanoo.github.io/templates/templates/iceclean.jpg
+
+
+NOTES: 28-01-2023
+
+CSS Media Query
+    - Responsiveness
+
+    Screen Size
+        - Guided
+            576px
+            768px
+            992px
+            1200px
+            1400px
+        - Custom
+            300px
+            600px
+            900px
+            1200px
+            1400px
+
+    - Breakpoint
+        xs - Extra Small
+        sm - Small
+        md - Medium
+        lg - Large
+        xl - Extra Large
+        xxl - Double Extra Large
+
+    - Breakpoint = Screen Sizes
+        xs - <576px ( 1 - 575.97 )
+        sm - >576px ( 576 > )
+        md - >768px ( 768 > )
+        lg - >992px ( 992 > )
+        xl - >1200px ( 1200 > )
+        xxl - >1400px ( 1400 > )
+
+    - Less Than and Greater Than (Range)
+        min-width
+        max-width
+
+    - @media rule
+        @media only screen and (max-width: 576px) {
+        }
+        @media only screen and (min-width: 576px) {
+        }
+        @media only screen and (min-width: 768px) {
+        }
+        @media only screen and (min-width: 992px) {
+        }
+        @media only screen and (min-width: 1200px) {
+        }
+        @media only screen and (min-width: 1400px) {
+        }
+
+
+NOTES: 29-01-2023
+
+CSS Assignment
+    - position
+        - relative
+            - parent container set to relative
+                - multiple child containers set to relative
+                    - use spacing + direction (eg: margin-top, margin-right, margin-bottom, margin-left)
+                    - use direction (eg: top, right, bottom, left)
+            - parent container set to relative
+                - multiple child containers set to absolute
+                    - use spacing + direction (eg: margin-top, margin-right, margin-bottom, margin-left)
+                    - use direction (eg: top, right, bottom, left)
+        - absolute
+            - parent container set to absolute
+                - multiple child containers set to relative
+                    - use spacing + direction (eg: margin-top, margin-right, margin-bottom, margin-left)
+                    - use direction (eg: top, right, bottom, left)
+            - parent container set to absolute
+                - multiple child containers set to absolute
+                    - use spacing + direction (eg: margin-top, margin-right, margin-bottom, margin-left)
+                    - use direction (eg: top, right, bottom, left)
+        - fixed
+        - sticky (Pending)
+
+This week's template to work on using Flexbox + Grid + Responsiveness:
+https://srinanoo.github.io/templates/templates/flomic-sonic.jpg
+
+
+
+NOTES: 04-02-2023
+
+Bootstrap
+    - Approach
+        - Mobile First
+            - Scale Up / Scale Down
+
+            - Mobile
+            - Tablets
+            - Laptop
+            - Desktop
+    
+    - integration
+        - CDN
+            - Content Delivery Network
+        - Download
+
+CORS
+    - Cross Origin Resource Sharing
+
+Contextual Classes
+    - primary
+    - secondary
+    - info
+    - success
+    - danger
+    - warning
+    - light
+    - dark
+
+    - background
+        bg-primary
+        bg-secondary
+        bg-info
+        bg-success
+        bg-danger
+        bg-warning
+        bg-light
+        bg-dark
+
+    - text
+        text-primary
+        text-secondary
+        text-info
+        text-success
+        text-danger
+        text-warning
+        text-light
+        text-dark
+
+    - border
+        border-primary
+        border-secondary
+        border-info
+        border-success
+        border-danger
+        border-warning
+        border-light
+        border-dark
+
+
+NOTES: 05-02-2023
+
+Spacing
+    - margin
+        in CSS:
+            margin
+            margin-top
+            margin-right
+            margin-bottom
+            margin-left
+        in Bootstrap:
+            m
+            mt
+            me - end (mr before v5)
+            mb
+            ms - start (ml before v5)
+            mx (me + ms)
+            my (mt + mb)
+    - padding
+        in CSS:
+            padding
+            padding-top
+            padding-right
+            padding-bottom
+            padding-left
+        in Bootstrap:
+            p
+            pt
+            pe - end (pr before v5)
+            pb
+            ps - start (pl before v5)
+            px (pe + ps)
+            py (pt + pb)
+
+Spacers (1rem = 16px)
+    0 = 0 x 16              = 0 (m-0, p-0 , mt-0, pt-0, etc.,)
+    1 = 1 x 0.25rem         = 4px (m-1, p-1)
+    2 = 2 x 0.5rem          = 8px
+    3 = 3 x 1rem            = 16px
+    4 = 4 x 1.5rem          = 24px
+    5 = 5 x 3rem            = 48px
+
+Sizing
+    - width
+        in Bootstrap
+            w
+                w-0
+                w-25
+                w-50
+                w-75
+                w-100
+                vw-100
+                min-vw-100
+    - height
+        in Bootstrap
+            h
+                h-0
+                h-25
+                h-50
+                h-75
+                h-100
+                vh-100
+                min-vh-100
+
+CSS Broswer Compatibility
+    text-align: center;
+    -webkit-text-align: center;
+    -moz-text-align: center;
+    -o-text-align: center;
+
+
+NOTES: 25-02-2023
+
+
+
+NOTES: 05-03-2023
+
+Tabular Column
+    10 blocks
+    3 columns
+        1 2 3
+        4 5 6
+        7 8 9
+        10
+
+    ceil(10/3) = 3.3333
+
+JS Task to Practice:
+    https://jschallenger.com/
+
+
+NOTES: 12-03-2023
+
+Git Commands:
+    - to push files into a new repository
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/srinanoo/october-offline-batch-2022-ver2.git
+        git push -u origin main
+    
+    - to push files into an existing repository
+        git remote add origin https://github.com/srinanoo/october-offline-batch-2022-ver2.git
+        git branch -M main
+        git push -u origin main
