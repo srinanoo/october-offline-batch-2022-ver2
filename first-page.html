@@ -450,8 +450,8 @@
         // let arr = new Array();
         // let obj = new Object();
 
-        let dt = new Date();
-        console.log(dt);
+        // let dt = new Date();
+        // console.log(dt);
 
         // let dt1 = new Date(1000);
         // console.log(dt1);
@@ -461,6 +461,175 @@
 
         // let dt3 = new Date(2023, 02, 25, 12, 33, 25, 555);
         // console.log(dt3);
+
+
+        // function testFunc() { // function defintion
+        //     // console.log(10+10);
+        //     // return 10+10;
+        //     let a = 10;
+        //     let b = 10;
+        //     let c = a + b;
+        //     // return c;
+        //     return "The addition of a + b is: "+c;
+        // }
+        // let temp = testFunc(); // function invoking / calling line
+        // console.log(temp);
+        
+        // function testFunc(a, b) { // function defintion
+        //     // console.log(10+10);
+        //     // return 10+10;
+        //     let c = a + b;
+        //     // return c;
+        //     return "The addition of a + b is: "+c;
+        // }
+        // temp = testFunc(10, 10); // function invoking / calling line
+        // console.log(temp);
+        // temp = testFunc(10, 15); // function invoking / calling line
+        // console.log(temp);
+        
+
+        // function generateTable(rows1=1, cols1=1) {
+        //     let output = "";
+        //     rows1 = parseInt(rows1);
+        //     cols1 = parseInt(cols1);
+        //     console.log(typeof rows1, rows1);
+        //     console.log(typeof cols1, cols1);
+        //     if(rows1<=0 || cols1<=0 || isNaN(rows1) || isNaN(cols1)) {
+        //         output = "Please enter the row count and/or col count";
+        //     } else {
+        //         output += "<table border='1'>";
+        //         for(let i=0; i<rows1; i++) {
+        //             output += "<tr>";
+        //             for(let j=0; j<cols1; j++) {
+        //                 output += "<td>" + j + "</td>";
+        //             }
+        //             output += "</tr>";
+        //         }
+        //         output += "</table>";
+        //     }
+
+        //     return output;
+        // }
+        // // temp = generateTable(3, 7);
+        // // document.write(temp);
+        // // temp = generateTable(2, 4);
+        // // document.write(temp);
+        // temp = generateTable("", 1);
+        // document.write(temp);
+
+        // function testFunc(a, b) { // function defintion
+        //     return "The addition of a + b is: "+(a + b);
+        // }
+        // let temp = testFunc(1, 1); // function invoking / calling line
+        // console.log(temp);
+
+        // testFunc1 = function(c, d) { // function defintion
+        //     return "The addition of c + d is: "+(c + d);
+        // }
+        // console.log(testFunc1(2, 2));
+
+        // testFunc2 = (f, g) => "The addition of f + g is: "+(f + g);
+        // console.log(testFunc2(3, 3));
+
+        // testFunc2 = f => "The addition of f + 10 is: "+(f + 10);
+        // console.log(testFunc2(3));
+
+        // testFunc2 = (f, g=1) => "The addition of f + g is: "+(f + g);
+        // console.log(testFunc2(3));
+
+        // f = 3;
+        // g = 3;
+        // console.log((f, g) =>  {
+        //     h = (f + g);
+        //     return "The addition of f + g is: "+h;
+        // });
+
+        // arr = [1000, "Dinesh", true, "01/01/2023"];
+        // for(let temp in arr) {
+        //     console.log(arr[temp]);
+        // }
+
+        // console.log("------ ");
+
+        // for(let temp of arr) {
+        //     console.log(temp);
+        // }
+
+        // console.log("------ ");
+
+        // arr.forEach(processArray);
+        // function processArray(v, i) {
+        //     console.log(v, i);
+        // }
+
+        // console.log("------ ");
+
+        // arr.forEach((v, i) => {
+        //     console.log(v, i);
+        // });
+
+        // arr = [1, 2, 3, 4, 5];
+        // arr.forEach(v => console.log(Math.sqrt(v)));
+
+        // out = arr.map(v => Math.sqrt(v));
+        // console.log(arr);
+        // console.log(out);
+
+        // ageOfPeople = [15, 20, 12, 36, 45, 50, 8];
+        // index = 0;
+        // while(index < ageOfPeople.length) {
+        //     if(ageOfPeople[index] >= 18) {
+        //         console.log(ageOfPeople[index]);
+        //     }
+        //     index++;
+        // }
+
+        // temp = ageOfPeople.filter(v => v>=18);
+        // console.log(temp);
+
+        // marks = [45, 50, 75, 85, 100];
+        // sum = 0;
+        // for(let i=0; i<marks.length; i++) {
+        //     sum += marks[i];
+        // }
+        // console.log(sum/marks.length);
+
+        // temp = marks.reduce((pv, v) => pv+v)/marks.length;
+        // console.log(temp);
+
+        // ageOfPeople = [15, 20, 12, 36, 45, 50, 8];
+        // temp = ageOfPeople.every(v => v>=18);
+        // console.log(temp);
+
+        // temp = ageOfPeople.some(v => v>=18);
+        // console.log(temp);
+
+
+        // ageOfPeople = [15, 20, 12, 36, 45, 50, 8, 22, 43, 67, 35, 11, 34, 16];
+        // console.log(ageOfPeople.length, "LENGTH");
+        // newArr = [];
+        // count = 0;
+        // for(let temp in ageOfPeople) {
+        //     if(count==5) break; // 0==5 1==5 2==5 3==5 4==5 5==5
+        //     if(ageOfPeople[temp]>=18) {
+        //         // console.log(ageOfPeople[temp]);
+        //         newArr.push(ageOfPeople[temp]);
+        //         count++; // 12345
+        //     }
+        //     console.log(temp, "TEMP");
+        // }
+        // // console.log(newArr.slice(0, 5));
+        // console.log(newArr);
+
+        // a = 0;
+        // while(a<10) {
+        //     if(a==1) {
+        //         a++;
+        //         continue;
+        //     }
+        //     console.log(a);
+        //     a++;
+        // }
 
     </script>
     <noscript>This page required JS to be enabled.</noscript>
