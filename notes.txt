@@ -798,3 +798,14 @@ Git Commands:
         git remote add origin https://github.com/srinanoo/october-offline-batch-2022-ver2.git
         git branch -M main
         git push -u origin main
+
+
+NOTES: 19-03-2023
+
+BODMAS
+    - Brackets
+    - Of
+    - Division
+    - Multiplication
+    - Addition
+    - Subtraction
