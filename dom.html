@@ -36,97 +36,97 @@
 
     <input type="button" value="Click" onclick="testFunc2();"> -->
 
-    <input type="number" id="rows" placeholder="Rows:"><br>
+    <!-- <input type="number" id="rows" placeholder="Rows:"><br>
     <input type="number" id="cols" placeholder="Columns:"><br>
-    <input type="button" value="Generate Table" onclick="generateTable();">
+    <input type="button" value="Generate Table" onclick="generateTable();"> -->
 
-    <div id="tableResult"></div>
+    <!-- <div id="tableResult"></div> -->
 
     <script>
-        function testFunc() {
-            // console.log("Button is clicked");
+        // function testFunc() {
+        //     // console.log("Button is clicked");
 
-            // old method
-                // document.<form name>.<input control name>.value
-                console.log(document.loginForm.txtUsername.value, "- form name");
+        //     // old method
+        //         // document.<form name>.<input control name>.value
+        //         console.log(document.loginForm.txtUsername.value, "- form name");
 
-                // document.forms[0].<input control name>.value
-                console.log(document.forms[0].txtUsername.value, "- forms array");
+        //         // document.forms[0].<input control name>.value
+        //         console.log(document.forms[0].txtUsername.value, "- forms array");
 
-            // traditional method
-                // document.getElementById("<id attribute value>").value
-                console.log(document.getElementById("idUserName").value, " - getElementById");
-                console.log(document.getElementById("div2").innerText, " - getElementById - innerText");
-                console.log(document.getElementById("div2").innerHTML, " - getElementById - innerHTML");
+        //     // traditional method
+        //         // document.getElementById("<id attribute value>").value
+        //         console.log(document.getElementById("idUserName").value, " - getElementById");
+        //         console.log(document.getElementById("div2").innerText, " - getElementById - innerText");
+        //         console.log(document.getElementById("div2").innerHTML, " - getElementById - innerHTML");
 
-                // document.getElementsByClassName("<class attribute value")[<index>].value
-                console.log(document.getElementsByClassName("clsInput")[0].value, " - getElementsByClassName");
+        //         // document.getElementsByClassName("<class attribute value")[<index>].value
+        //         console.log(document.getElementsByClassName("clsInput")[0].value, " - getElementsByClassName");
 
-                // document.getElementsByName("<name attribute value>")[<index>].value
-                console.log(document.getElementsByName("txtUsername")[0].value, " - getElementsByName");
+        //         // document.getElementsByName("<name attribute value>")[<index>].value
+        //         console.log(document.getElementsByName("txtUsername")[0].value, " - getElementsByName");
 
-                // document.getElementsByTagName("<name of the tag>")[<index>].value
-                console.log(document.getElementsByTagName("input")[0].value, " - getElementsByTagName");
+        //         // document.getElementsByTagName("<name of the tag>")[<index>].value
+        //         console.log(document.getElementsByTagName("input")[0].value, " - getElementsByTagName");
 
-            // modern method
-                // document.querySelector("<css selectors>").value
-                console.log(document.querySelector("#idUserName").value, " - querySelector(#id)");
-                console.log(document.querySelector(".clsInput").value, " - querySelector(.class)");
+        //     // modern method
+        //         // document.querySelector("<css selectors>").value
+        //         console.log(document.querySelector("#idUserName").value, " - querySelector(#id)");
+        //         console.log(document.querySelector(".clsInput").value, " - querySelector(.class)");
 
-                // document.querySelectorAll("<css selectors>").value
-                console.log(document.querySelectorAll(".clsInput")[0].value, " - querySelectorAll(.class)");
-        }
+        //         // document.querySelectorAll("<css selectors>").value
+        //         console.log(document.querySelectorAll(".clsInput")[0].value, " - querySelectorAll(.class)");
+        // }
 
-        function testFunc1() {
-            let div1 = document.getElementById("div1").innerText;
-            let div2 = document.getElementById("div2").innerHTML;
+        // function testFunc1() {
+        //     let div1 = document.getElementById("div1").innerText;
+        //     let div2 = document.getElementById("div2").innerHTML;
 
-            let div3 = document.querySelector("#div3");
-            div3.innerText = div2;
-            div3.setAttribute("class", "clsDiv");
-            div3.setAttribute("title", "this is a js way");
+        //     let div3 = document.querySelector("#div3");
+        //     div3.innerText = div2;
+        //     div3.setAttribute("class", "clsDiv");
+        //     div3.setAttribute("title", "this is a js way");
 
-            let div4 = document.querySelector("#div4");
-            div4.innerHTML = div2;
-            div4.style.color = "red";
-            div4.style.backgroundColor = "green";
+        //     let div4 = document.querySelector("#div4");
+        //     div4.innerHTML = div2;
+        //     div4.style.color = "red";
+        //     div4.style.backgroundColor = "green";
 
-            console.log(div3.getAttribute("class"));
-            console.log(div3.getAttribute("id"));
-        }
+        //     console.log(div3.getAttribute("class"));
+        //     console.log(div3.getAttribute("id"));
+        // }
 
-        function testFunc2() {
-            let img1 = document.querySelector("#img1").getAttribute("src");
-            let img1src = document.querySelector("#img1").src;
+        // function testFunc2() {
+        //     let img1 = document.querySelector("#img1").getAttribute("src");
+        //     let img1src = document.querySelector("#img1").src;
 
-            console.log(img1);
-            console.log(img1src);
+        //     console.log(img1);
+        //     console.log(img1src);
 
-            document.querySelector("#img2").src = img1;
-        }
+        //     document.querySelector("#img2").src = img1;
+        // }
 
-        function generateTable() {
-            let output = "";
-            rows1 = parseInt(document.getElementById("rows").value);
-            cols1 = parseInt(document.getElementById("cols").value);
-            console.log(typeof rows1, rows1);
-            console.log(typeof cols1, cols1);
-            if(rows1<=0 || cols1<=0 || isNaN(rows1) || isNaN(cols1)) {
-                output = "Please enter the row count and/or col count";
-            } else {
-                output += "<table border='1'>";
-                for(let i=0; i<rows1; i++) {
-                    output += "<tr>";
-                    for(let j=0; j<cols1; j++) {
-                        output += "<td>" + j + "</td>";
-                    }
-                    output += "</tr>";
-                }
-                output += "</table>";
-            }
+        // function generateTable() {
+        //     let output = "";
+        //     rows1 = parseInt(document.getElementById("rows").value);
+        //     cols1 = parseInt(document.getElementById("cols").value);
+        //     console.log(typeof rows1, rows1);
+        //     console.log(typeof cols1, cols1);
+        //     if(rows1<=0 || cols1<=0 || isNaN(rows1) || isNaN(cols1)) {
+        //         output = "Please enter the row count and/or col count";
+        //     } else {
+        //         output += "<table border='1'>";
+        //         for(let i=0; i<rows1; i++) {
+        //             output += "<tr>";
+        //             for(let j=0; j<cols1; j++) {
+        //                 output += "<td>" + j + "</td>";
+        //             }
+        //             output += "</tr>";
+        //         }
+        //         output += "</table>";
+        //     }
 
-            document.querySelector("#tableResult").innerHTML = output;
-        }
+        //     document.querySelector("#tableResult").innerHTML = output;
+        // }
     </script>
     
 </body>

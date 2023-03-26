@@ -809,3 +809,27 @@ BODMAS
     - Multiplication
     - Addition
     - Subtraction
+
+
+NOTES: 26-03-2023
+
+JS Events
+    - Keyboard
+        keydown
+        keypress
+        keyup
+
+    - Mouse
+        mouseover
+        mouseout
+        mouseenter
+        mouseleave
+        mousemove
+
+    - Other
+        blur
+        focus
+        change
+        click
+        dblclick
+        load

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="output"></div>
+    
+    <script>
+        let data = [
+            {
+                "imageUrl" : "https://ddz4ak4pa3d19.cloudfront.net/cache/56/62/5662bc2079ee7ffd491b65c29a360ac9.jpg",
+                "title" : "Sprite Fright"
+            },
+            {
+                "imageUrl" : "https://cdna.artstation.com/p/assets/covers/images/019/392/064/large/andy-goralczyk-agent-poster-street-small.jpg?1563288236",
+                "title" : "Agent 327"
+            },
+            {
+                "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Spring2019AlphaPosterBlender.jpg/1200px-Spring2019AlphaPosterBlender.jpg",
+                "title" : "Spring"
+            }
+        ];
+        let div = document.createElement("div");
+        for(let temp of data) {
+            let img1 = document.createElement("img");
+            img1.setAttribute("src", temp.imageUrl);
+            img1.setAttribute("alt", temp.title);
+
+            div.append(img1);
+        }
+        
+        document.querySelector("#output").append(div);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clsDiv {
+            color: purple;
+            background-color: pink;
+        }
+        #div1 {
+            /* height: 100px;
+            width: 100px; */
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div id="div1">
+        <h3 id="h3">Heading 3</h3>
+        <p id="p1">Paragraph</p>
+        <div id="div2">Div Container</div>
+    </div>
+
+    <br><br>
+    <input type="button" id="btnClick" value="Click"> -->
+
+    <!-- Subjects:<br>
+    <input type="checkbox" name="chkSubjects" value="HTML"> HTML<br>
+    <input type="checkbox" name="chkSubjects" value="CSS"> CSS<br>
+    <input type="checkbox" name="chkSubjects" value="BS"> Bootstrap<br>
+    <input type="checkbox" name="chkSubjects" value="JS"> JavaScript<br>
+    <input type="checkbox" name="chkSubjects" value="ReactJS"> ReactJS<br>
+
+    <input type="button" id="btnClick" value="Click"> -->
+
+    <!-- <textarea id="taMessage"></textarea>
+    <div id="count"></div> -->
+
+    <!-- <div id="div1">Original Content</div> -->
+
+    <!-- <div id="div1"></div>
+    <div id="xy"></div> -->
+
+    <!-- <div id="div1">
+        <div id="div2" data-custom="1000">Div 2</div>
+        <div id="div3" data-custom="2000">Div 3</div>
+        <div id="div4" data-custom="3000">Div 4</div>
+    </div> -->
+
+    <!-- <input type="text" id="txt1"><br>
+    <input type="text" id="txt2"><br>
+    <div>Div Container</div>
+    <input type="text" id="txt3"><br>
+    <input type="text" id="txt4"><br>
+    <input type="text" id="txt5"><br> -->
+
+    <!-- Cities:<br>
+    <select id="cities">
+        <option value="1">Chennai</option>
+        <option value="2">Bengaluru</option>
+        <option value="3">Jaipur</option>
+        <option value="4">Mumbai</option>
+        <option value="5">Kochi</option>
+        <option value="6">Hyderabad</option>
+    </select>
+
+    <br><br>
+
+    States:<br>
+    <select id="states">
+        <option value="1">Tamilnadu</option>
+        <option value="2">Karnataka</option>
+        <option value="3">Rajasthan</option>
+        <option value="4">Maharastra</option>
+        <option value="5">Kerala</option>
+        <option value="6">Telengana</option>
+    </select> -->
+
+    <!-- <button id="btnClick">Button</button> -->
+
+    <script>
+        // document.querySelector("#btnClick").addEventListener("dblclick", ()=>{
+        //     console.log("Double Clicked");
+        // });
+
+        // document.querySelector("#cities").addEventListener("change", ()=>{
+        //     document.querySelector("#states").value = document.querySelector("#cities").value;
+        // });
+
+        // document.querySelector("#txt1").focus();
+        // document.querySelector("#txt3").addEventListener("focus", ()=>{
+        //     let txt3 = document.querySelector("#txt3");
+        //     if(txt3.value=="") {
+        //         txt3.style.backgroundColor = "red";
+        //         txt3.style.color = "white";
+        //         txt3.focus();
+        //     } else {
+        //         txt3.style.backgroundColor = "green";
+        //     }
+        // });
+        // document.querySelector("#txt3").addEventListener("blur", ()=>{
+        //     let txt3 = document.querySelector("#txt3");
+        //     if(txt3.value=="") {
+        //         txt3.style.backgroundColor = "red";
+        //         txt3.style.color = "white";
+        //         txt3.focus();
+        //     } else {
+        //         txt3.style.backgroundColor = "green";
+        //     }
+        // });
+
+        // document.querySelector("#div1").addEventListener("click", (event)=>{
+        //     console.log(event.target.id);
+        //     console.log(event.target.getAttribute("data-custom"));
+        // });
+        // document.querySelector("#div2").addEventListener("click", ()=>{
+        //     console.log("Div 2 is clicked");
+        // });
+        // document.querySelector("#div3").addEventListener("click", ()=>{
+        //     console.log("Div 3 is clicked");
+        // });
+        // document.querySelector("#div4").addEventListener("click", ()=>{
+        //     console.log("Div 4 is clicked");
+        // });
+
+        // document.querySelector("#div1").addEventListener("mousemove", (event)=>{
+        //     let x = event.clientX;
+        //     let y = event.clientY;
+        //     document.querySelector("#xy").innerHTML = "X - "+x+", Y - "+y;
+        // });
+
+        // document.querySelector("#div1").addEventListener("mouseenter", ()=>{
+        //     let div1 = document.querySelector("#div1");
+        //     div1.innerHTML = "New Content Modified";
+        //     div1.style.color = "red";
+        // });
+        // document.querySelector("#div1").addEventListener("mouseleave", ()=>{
+        //     let div1 = document.querySelector("#div1");
+        //     div1.innerHTML = "Original Content";
+        //     div1.style.color = "black";
+        // });
+
+        // document.querySelector("#taMessage").addEventListener("keyup", ()=>{
+        //     let counter = document.querySelector("#taMessage").value.length;
+        //     document.querySelector("#count").innerHTML = counter;
+        // });
+
+        // document.querySelector("#btnClick").addEventListener("click", () => {
+        //     let subjects = document.getElementsByName("chkSubjects");
+        //     console.log(subjects.length);
+        //     for(let i=0; i<subjects.length; i++) {
+        //         if(subjects[i].checked) console.log(subjects[i].value);
+        //     }
+        // });
+
+        // document.querySelector("#btnClick").addEventListener("click", () => {
+        //     let div1 = document.querySelector("#div1");
+        //     let h3 = document.querySelector("#h3");
+        //     let p1 = document.querySelector("#p1");
+        //     let div2 = document.querySelector("#div2");
+
+        //     let h4 = document.createElement("h4");
+        //     h4.innerHTML = "Heading 4";
+        //     h4.style.color = "red";
+        //     h4.style.backgroundColor = "yellow";
+
+        //     div1.append(h4);
+
+        //     let div3 = document.createElement("div");
+        //     div3.innerText = "Div 3 Container";
+        //     div3.setAttribute("class", "clsDiv");
+
+        //     div1.prepend(div3);
+
+        //     let p2 = document.createElement("p");
+        //     p2.innerHTML = "<strong>This is a new Paragraph</strong>";
+
+        //     div1.insertBefore(p2, p1);
+
+        //     let button = document.createElement("button");
+        //     button.innerHTML = "New Button";
+        //     button.style.color = "red";
+        //     button.addEventListener("click", ()=>{
+        //         console.log("This new button is clicked");
+        //     });
+
+        //     div1.append(button);
+        // });
+        
+    </script>
+    
+</body>
+</html>
