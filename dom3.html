@@ -5,35 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img {
+            max-width: 100%;
+        }
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card > div {
+            width: 33.333333%;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
 
     <div id="output"></div>
     
     <script>
+        // let data = [
+        //     {
+        //         "imageUrl" : "https://ddz4ak4pa3d19.cloudfront.net/cache/56/62/5662bc2079ee7ffd491b65c29a360ac9.jpg",
+        //         "title" : "Sprite Fright"
+        //     },
+        //     {
+        //         "imageUrl" : "https://cdna.artstation.com/p/assets/covers/images/019/392/064/large/andy-goralczyk-agent-poster-street-small.jpg?1563288236",
+        //         "title" : "Agent 327"
+        //     },
+        //     {
+        //         "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Spring2019AlphaPosterBlender.jpg/1200px-Spring2019AlphaPosterBlender.jpg",
+        //         "title" : "Spring"
+        //     }
+        // ];
+        // let div = document.createElement("div");
+        // for(let temp of data) {
+        //     let img1 = document.createElement("img");
+        //     img1.setAttribute("src", temp.imageUrl);
+        //     img1.setAttribute("alt", temp.title);
+
+        //     div.append(img1);
+        // }
+        
+        // document.querySelector("#output").append(div);
+
         let data = [
             {
-                "imageUrl" : "https://ddz4ak4pa3d19.cloudfront.net/cache/56/62/5662bc2079ee7ffd491b65c29a360ac9.jpg",
-                "title" : "Sprite Fright"
+                img: "images/background.jpeg",
+                title: "Project 1",
+                description: "Project 1 descriptiong goes here...",
             },
             {
-                "imageUrl" : "https://cdna.artstation.com/p/assets/covers/images/019/392/064/large/andy-goralczyk-agent-poster-street-small.jpg?1563288236",
-                "title" : "Agent 327"
+                img: "images/background.jpeg",
+                title: "Project 2",
+                description: "Project 2 descriptiong goes here...",
             },
             {
-                "imageUrl" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Spring2019AlphaPosterBlender.jpg/1200px-Spring2019AlphaPosterBlender.jpg",
-                "title" : "Spring"
+                img: "images/background.jpeg",
+                title: "Project 3",
+                description: "Project 3 descriptiong goes here...",
+            },
+            {
+                img: "images/background.jpeg",
+                title: "Project 4",
+                description: "Project 4 descriptiong goes here...",
+            },
+            {
+                img: "images/background.jpeg",
+                title: "Project 5",
+                description: "Project 5 descriptiong goes here...",
+            },
+            {
+                img: "images/background.jpeg",
+                title: "Project 6",
+                description: "Project 6 descriptiong goes here...",
             }
         ];
         let div = document.createElement("div");
+        div.setAttribute("class", "card");
         for(let temp of data) {
-            let img1 = document.createElement("img");
-            img1.setAttribute("src", temp.imageUrl);
-            img1.setAttribute("alt", temp.title);
+            let divChild = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = temp.img;
+            let h4 = document.createElement("h4");
+            h4.innerHTML = temp.title;
+            let p = document.createElement("p");
+            p.innerHTML = temp.description;
+            divChild.append(img, h4, p);
 
-            div.append(img1);
+            div.append(divChild);
         }
-        
         document.querySelector("#output").append(div);
     </script>
     
