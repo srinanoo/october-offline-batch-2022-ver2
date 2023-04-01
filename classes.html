@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // obj = {
+        //     id: 1,
+        //     add: (a, b) => {
+        //         return a+b;
+        //     }
+        // }
+        // console.log(obj.id);
+        // console.log(obj.add(2, 3));
+        // obj.name = "Dinesh";
+        // console.log(obj);
+        // console.log(obj);
+
+        // function objFunc(id, name, subject) {
+        //     this.id = id;
+        //     this.name = name;
+        //     this.subject = subject;
+        //     this.showDetails = () => {
+        //         return "My Name is : "+this.name;
+        //     }
+        // }
+        // let newobj = new objFunc(1, "Dinesh", "Fullstack");
+        // console.log(newobj.id);
+        // console.log(newobj.name);
+        // console.log(newobj.subject);
+        // console.log(newobj.showDetails());
+        // newobj.age = 30;
+        // console.log(newobj.age);
+
+        // newobj = new objFunc(2, "Tony", "JavaScript");
+        // console.log(newobj.id);
+        // console.log(newobj.name);
+        // console.log(newobj.subject);
+        // console.log(newobj.showDetails());
+        // console.log(newobj.age);
+
+
+        // class ObjClass { // Math
+        //     constructor(id, name, subject) { // will be called as the first method when a class in instantiated
+        //         this.id = id;
+        //         this.name = name;
+        //         this.subject = subject;
+        //     }
+
+        //     getDetails() { // member function .... max() ... getters (because it just retrieves the data)
+        //         return "My Name is : "+this.name;
+        //     }
+
+        //     processData(a, b) {
+        //         return a+b;
+        //     }
+
+        //     setDetails(newName) {
+        //         this.name = newName;
+        //     }
+        // }
+        // let clsObj = new ObjClass(1, "Siva", "JavaScript");
+        // console.log(clsObj.id);
+        // console.log(clsObj.name);
+        // console.log(clsObj.subject);
+        // console.log(clsObj.getDetails());
+        // console.log(clsObj.processData(4,4));
+        // clsObj.setDetails("Priya");
+        // console.log(clsObj.getDetails());
+        // console.log(clsObj.name);
+
+        // clsObj = new ObjClass(1000, "Laksath", "HTML");
+        // console.log(clsObj.id);
+        // console.log(clsObj.name);
+        // console.log(clsObj.subject);
+        // console.log(clsObj.getDetails());
+        // console.log(clsObj.processData(4,4));
+
+        class ParentClass {
+            constructor(pid, pname) {
+                this.parentId = pid;
+                this.parentName = pname;
+            }
+
+            getParentDetails() {
+                return "My Parent Details are: Name = "+ this.parentName + ", Id = " + this.parentId;
+            }
+        }
+        class ChildClass extends ParentClass {
+            constructor(pid, pname, cid, cname) {
+                super(pid, pname);
+                this.childId = cid;
+                this.childName = cname;
+            }
+
+            getChildDetails() {
+                return "My Details are: Name = "+ this.childName + ", Id = " + this.childId;
+            }
+
+            setChildDetails(nid, nname) {
+                this.childId = nid;
+                this.childName = nname;
+            }
+        }
+        let objClass = new ChildClass(1, "Parent Name", 1, "Child Name");
+        console.log(objClass.parentId);
+        console.log(objClass.parentName);
+
+        console.log(objClass.childId);
+        console.log(objClass.childName);
+
+        console.log(objClass.getParentDetails());
+        console.log(objClass.getChildDetails());
+
+        objClass.setChildDetails(2, "New Child Name");
+        console.log(objClass.getChildDetails());
+    </script>
+    
+</body>
+</html>

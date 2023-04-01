@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="results"></div>
+
+    <button id="btnShow">Show</button>
+
+    <script>
+        document.querySelector("#btnShow").addEventListener("click", async () => {
+            // fetch('https://catfact.ninja/fact')
+            //     .then(data => data.json())
+            //     .then(data1 => {
+            //         console.log(data1);
+            //         let final = "Fact: " + data1.fact + "<br>Length: " + data1.length;
+            //         document.querySelector("#results").innerHTML = final;
+            //     });
+
+            let data = await fetch('https://catfact.ninja/fact');
+            let data1 = await data.json();
+            let final = "Fact: " + data1.fact + "<br>Length: " + data1.length;
+            document.querySelector("#results").innerHTML = final;
+        });
+
+        // async function showMsg() {
+        //     let p = new Promise((resolve, reject) => {
+        //         try {
+        //             // b = 10;
+        //             console.log(b);
+        //             resolve(b);
+        //         } catch(err) {
+        //             reject(err.message);
+        //         }
+        //     });
+        //     p.then(
+        //         function(data) {
+        //             console.log(data, "resolve");
+        //         },
+        //         function(err) {
+        //             console.log(err, "reject");
+        //         }
+        //     )
+            
+        // }
+        // async function call() {
+        //     console.log("1st Message");
+        //     // let data = await showMsg();
+        //     showMsg()
+        //     // console.log(data);
+        //     console.log("last Message");
+        // }
+        // call();
+    </script>
+    
+</body>
+</html>

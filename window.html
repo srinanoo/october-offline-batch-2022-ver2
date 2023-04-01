@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <button id="btnBack">Back</button>
+    <button id="btnForward">Forward</button>
+    <button id="btnGo">Go</button>
+    <button id="btnClick">Click</button> -->
+
+    <!-- <div id="time"></div>
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button> -->
+    
+
+    <button id="btnOpen">Open</button>
+
+    <script>
+        document.querySelector("#btnOpen").addEventListener("click", ()=>{
+            let newWindow = window.open("", "", "width=300, height=300, top=100, left=200");
+            newWindow.document.write("<p>This is a new popup window</p>");
+            newWindow.document.write("<button onclick='window.close();'>Close</button>");
+        });
+
+
+        // let timer;
+        // document.querySelector("#btnStart").addEventListener("click", ()=>{
+        //     timer = setInterval(() => {
+        //         let dt = new Date();
+        //         document.querySelector("#time").innerHTML = dt.toLocaleTimeString();
+        //     }, 1000);
+        // });
+        // document.querySelector("#btnStop").addEventListener("click", ()=>{
+        //     clearInterval(timer);
+        // });
+
+        // setTimeout(() => {
+        //     console.log("This is going to executer after 5 secs")
+        // }, 5000);
+
+        
+
+        // document.querySelector("#btnBack").addEventListener("click", ()=>{
+        //     history.back();
+        // });
+        // document.querySelector("#btnForward").addEventListener("click", ()=>{
+        //     history.forward();
+        // });
+        // document.querySelector("#btnGo").addEventListener("click", ()=>{
+        //     history.go(-2);
+        // });
+
+        // console.log(location);
+        // console.log(location.hostname);
+        // console.log(location.protocol);
+        // console.log(location.pathname);
+
+        // document.querySelector("#btnClick").addEventListener("click", ()=>{
+        //     // location.href = "https://flipkart.com";
+        //     // location.reload();
+        //     location.replace("https://netflix.com");
+        // });
+
+        // window.alert("Just a popup message");
+        
+        // let outcome = window.confirm("Are you sure you wanted to close/delete?");
+        // // console.log(outcome);
+        // if(outcome) {
+        //     console.log("Deleted");
+        // } else {
+        //     console.log("Not going to delete");
+        // }
+
+        // let name = window.prompt("Enter your name:");
+        // console.log(name);
+        // console.log(typeof name);
+
+    </script>
+    
+</body>
+</html>
