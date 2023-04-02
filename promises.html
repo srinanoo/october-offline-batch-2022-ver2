@@ -13,20 +13,20 @@
     <button id="btnShow">Show</button>
 
     <script>
-        document.querySelector("#btnShow").addEventListener("click", async () => {
-            // fetch('https://catfact.ninja/fact')
-            //     .then(data => data.json())
-            //     .then(data1 => {
-            //         console.log(data1);
-            //         let final = "Fact: " + data1.fact + "<br>Length: " + data1.length;
-            //         document.querySelector("#results").innerHTML = final;
-            //     });
+        // document.querySelector("#btnShow").addEventListener("click", async () => {
+        //     // fetch('https://catfact.ninja/fact')
+        //     //     .then(data => data.json())
+        //     //     .then(data1 => {
+        //     //         console.log(data1);
+        //     //         let final = "Fact: " + data1.fact + "<br>Length: " + data1.length;
+        //     //         document.querySelector("#results").innerHTML = final;
+        //     //     });
 
-            let data = await fetch('https://catfact.ninja/fact');
-            let data1 = await data.json();
-            let final = "Fact: " + data1.fact + "<br>Length: " + data1.length;
-            document.querySelector("#results").innerHTML = final;
-        });
+        //     let data = await fetch('https://catfact.ninja/fact');
+        //     let data1 = await data.json();
+        //     let final = "Fact: " + data1.fact + "<br>Length: " + data1.length;
+        //     document.querySelector("#results").innerHTML = final;
+        // });
 
         // async function showMsg() {
         //     let p = new Promise((resolve, reject) => {
@@ -56,6 +56,38 @@
         //     console.log("last Message");
         // }
         // call();
+
+        function callMessage() {
+            // setTimeout(() => {
+            //     console.log("Intermediate Statement");
+            // }, 3000);
+
+            return new Promise((resolve, reject, err) => {
+                setTimeout(() => {
+                    resolve("Intermediate Statement");
+                }, 3000);
+
+                if(err)
+                    reject("This is from Reject");
+            });
+            // data.then(
+            //     function(data) {
+            //         console.log(data, " - resolve");
+            //     },
+            //     function(err) {
+            //         console.log(err, " - reject");
+            //     }
+            // )
+        }
+
+        async function produce() {
+            console.log("1st Statement");
+            let data = await callMessage();
+            console.log(data);
+            console.log("2nd Statement");
+        }
+
+        produce();
     </script>
     
 </body>

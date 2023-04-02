@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .colorRed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <p>Paragraph Content</p>
+    <div class="clsDiv">Div Container</div>
+    <h4 id="h4">Heading 4</h4>
+    <input type="text" id="txt1" value="Dinesh">
+    <input type="text" id="txt2">
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <button id="btnClick">Click</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        console.log("From JS");
+
+        // $(document).ready(function() {
+        //     console.log("From jQuery");
+        // });
+
+        // $.noConflict();
+        // $(document).ready(function() {
+        //     console.log("From jQuery");
+        // });
+
+        arr = [1000, "Dinesh", true, "01/01/2023"];
+        // let [id, name, active, dateJoined] = arr;
+        // console.log(id);
+        // console.log(name);
+        // console.log(active);
+        // console.log(dateJoined);
+
+        obj = {
+            id: 2000,
+            name: "Tony",
+            active: false,
+            dateJoined: "02/02/2023"
+        }
+        let {id, name, active, dateJoined} = obj;
+        console.log(id);
+        console.log(name);
+        console.log(active);
+        console.log(dateJoined);
+
+        document.querySelector("#div1").innerHTML = "Id = "+id+", Name = "+name+", Active = "+active+", Date Joined = "+dateJoined;
+
+        document.querySelector("#div2").innerHTML = `Id = ${id}, Name = ${name}, Active = ${active}, Date Joined = ${dateJoined}`;
+
+        jQuery(document).ready(function($) {
+            console.log("From jQuery");
+
+            $("#btnClick").click(() =>{
+                console.log($("p").text());
+                console.log($(".clsDiv").html());
+                console.log($("#h4").html());
+                console.log($("#txt1").val());
+
+                $("#div1").text("<p><strong>New Content</strong></p>");
+                $("#div2").html("<p><strong>New Content</strong></p>");
+
+                $("#txt2").val("New Content");
+
+                $("p").addClass("colorRed");
+                $(".clsDiv").css(
+                    {
+                        "background-color": "red",
+                        "color": "yellow"
+                    }
+                )
+            });
+            
+        });
+    </script>
+    
+</body>
+</html>
